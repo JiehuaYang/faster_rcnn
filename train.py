@@ -1,7 +1,10 @@
 import numpy as np
 import torch
 
-def train():
+from utils.config import opt
+# *args tuples *kwargs dict
+def train(**kwargs):
+    
 
 
 
