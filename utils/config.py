@@ -22,6 +22,10 @@ class Config:
                 # 用raise 触发异常，触发异常之后后面的代码不会被执行
                 raise ValueError("Error option  %s" % k)
 
+            print('======config======')
+            pprint(self._state_dict)
+            print("======end======")
+
 
 
 
