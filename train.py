@@ -1,5 +1,5 @@
 import numpy as np
-import torch
+from torch.utils import data
 
 from utils.config import opt
 from data.dataset import Dataset
@@ -10,6 +10,8 @@ def train(**kwargs):
 
     #数据集
     dataset = Dataset(opt)
+
+    dataloader = data.DataLoader(dataset, batch_size = 1, shuffle = True, num_workers = opt.num_workers)
 
 
 
