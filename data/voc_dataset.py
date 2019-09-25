@@ -12,7 +12,11 @@ class VOCDataset:
         self.use_difficult = use_difficult
         self.return_difficult = return_difficult
 
+        #标签的类别
         self.label_names = VOC_BBOX_LABEL_NAMES
+
+    def __len__():
+        return len(self.ids)
 
 
 
