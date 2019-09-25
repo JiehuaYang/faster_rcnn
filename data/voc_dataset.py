@@ -7,3 +7,11 @@ class VOCDataset:
         #先获取id列表
         id_list = os.path.join(data_dir,'ImageSets/Main/{0}.txt'.format(split))
         self.ids = [id.strip() for id in open(id_list)]
+
+        self.data_dir = data_dir
+        self.use_difficult = use_difficult
+        self.return_difficult = return_difficult
+
+        self.label_names = VOC_BBOX_LABEL_NAMES
+
+        
