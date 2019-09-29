@@ -19,7 +19,7 @@ class VOCDataset:
         return len(self.ids)
 
     def
-    id_ = self.ids[i]
+        id_ = self.ids[i]
         anno = ET.parse(
             os.path.join(self.data_dir, 'Annotations', id_ + '.xml'))
         bbox = list()
