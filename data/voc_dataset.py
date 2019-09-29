@@ -18,7 +18,7 @@ class VOCDataset:
     def __len__():
         return len(self.ids)
 
-    def
+    def get_examples():
         id_ = self.ids[i]
         anno = ET.parse(
             os.path.join(self.data_dir, 'Annotations', id_ + '.xml'))
