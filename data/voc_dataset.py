@@ -26,6 +26,8 @@ class VOCDataset:
         label = list()
         difficult = list()
 
+        for obj in anno.findall("object")
+
 
 
 VOC_BBOX_LABEL_NAMES = (
