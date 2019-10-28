@@ -26,7 +26,8 @@ class VOCDataset:
         label = list()
         difficult = list()
 
-        for obj in anno.findall("object")
+        for obj in anno.findall("object"):
+            
 
 
 
