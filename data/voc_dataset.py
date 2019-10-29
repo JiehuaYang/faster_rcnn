@@ -31,7 +31,7 @@ class VOCDataset:
             if not self.use_difficult and int(obj.find("difficult").text) == 1:
                 continue
             
-            difficult.append()
+            difficult.append(int(obj.find("difficult")))
 
 
 
