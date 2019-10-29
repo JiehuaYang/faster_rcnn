@@ -27,7 +27,9 @@ class VOCDataset:
         difficult = list()
 
         for obj in anno.findall("object"):
-            if not self.use_difficult and 
+            #difficult skip
+            if not self.use_difficult and int(obj.find("difficult").text) == 1:
+                continue
             
 
 
